@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>
+	nbe collaps
+</title>
+<style>
+.nbe-faq-title {
+  background: white;
+  z-index: 8;
+  border-radius: 15px;
+  position: relative;
+  padding: 20px 30px;
+  transition: 0.5s all;
+  box-shadow: 0 10px 45px 0 rgba(0, 0, 0, 0.16);
+}
+.nbe-faq-title p {
+  font-size: 16px;
+  cursor: pointer;
+}
+.nbe-faq-title:after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  z-index: 1;
+  transform: rotate(0deg);
+  transition: 0.5s all;
+}
+
+
+
+.nbe-faq-text {
+  transition: 0.8s max-height;
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  top: -21px;
+  background-color: white;
+  z-index: 0;
+  width: 97%;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0, 10px, 45px, 0, rgba(0, 0, 0, 0.16);
+}
+.nbe-faq-text p {
+  padding: 43px 21px 35px 27px;
+}
+
+.expand-answer {
+  max-height: 202px;
+}
+
+.expanded {
+  box-shadow: 0, 10px, 45px, 0, rgba(0, 0, 0, 0.16);
+}
+.expanded:after {
+  transform: rotate(90deg) !important;
+}
+
+</style>
+			
+			
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+		
+                <div class="nbe-faq-title" data-expand-triger="one">
+                    <p>What can you expect before the training?</p>
+                </div>
+                <div class="nbe-faq-text" data-expand="one">
+                    <p class="nbe-regular-text">
+                        You get a free chapter, you should expect to understand how the training is built, what type of
+                        different training methods we use and how to prepare yourself. You should also expect our
+                        training methods to contain a lot of variation so that it's easy and keeps the learning
+                        interesting.
+                    </p>
+                </div>
+                <div class="nbe-faq-title" data-expand-triger="two">
+                    <p>What can you expect before the training?</p>
+                </div>
+                <div class="nbe-faq-text" data-expand="two">
+                    <p class="nbe-regular-text">
+                        You get a free chapter, you should expect to understand how the training is built, what type of
+                        different training methods we use and how to prepare yourself. You should also expect our
+                        training methods to contain a lot of variation so that it's easy and keeps the learning
+                        interesting.
+                    </p>
+                </div>
+                <div class="nbe-faq-title" data-expand-triger="three">
+                    <p>What can you expect before the training?</p>
+                </div>
+                <div class="nbe-faq-text" data-expand="three">
+                    <p class="nbe-regular-text">
+                        You get a free chapter, you should expect to understand how the training is built, what type of
+                        different training methods we use and how to prepare yourself. You should also expect our
+                        training methods to contain a lot of variation so that it's easy and keeps the learning
+                        interesting.
+                    </p>
+                </div>
+         
+
+<script>
+
+class NbeCollapse{
+   constructor(elem,opt) {
+		console.log(opt.hello)
+		this.element = elem;
+		this.closeOther =opt.closeOther?opt.closeOther:false;
+		this.faqExpand();
+    }
+    faqExpand() {
+		var self=this;
+        $(this.element).on('click', function () {
+			let check = $(this).hasClass('expanded');
+			if(self.closeOther){
+				$(".nbe-faq-title").removeClass("expanded");
+				$(".nbe-faq-text").removeClass("expand-answer");
+			}
+			let expandThis = $(this).data('expand-triger');
+            if (check === false) {
+                $(this).addClass('expanded');
+                $('[data-expand=' + expandThis + ']').addClass('expand-answer')
+            } else {
+                $(this).removeClass('expanded');
+                $('[data-expand=' + expandThis + ']').removeClass('expand-answer')
+            }
+        })
+    };
+}
+
+$(document).ready(function(){
+	new NbeCollapse('.nbe-faq-title',{
+			closeOther:false
+	});
+})
+</script>
+</body>
+
+
+
+</html>

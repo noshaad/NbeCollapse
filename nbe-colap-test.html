@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>
+	nbe collaps
+</title>
+<style>
+.nbe-faq-title {
+    background: white;
+    z-index: 8;
+    position: relative;
+    padding: 20px 30px;
+    transition: 0.5s all;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+path.Path_89961 {
+    transition: .5s all;
+    transform-origin: 960% 555%;
+    transform: translate(-221px, -120px) rotate(0deg);
+}
+.expanded .Path_89961 {
+    transform:  translate(-221px, -120px) rotate(90deg);
+    transform-origin: 960% 555%;
+	fill:#1098D6;
+	stroke:#1098D6;
+}
+.expanded p {
+    color: #1098D6;
+}
+.expanded .Path_89960{
+	fill:#1098D6;
+	stroke:#1098D6;
+}
+.nbe-faq-title p {
+  font-size: 16px;
+  cursor: pointer;
+}
+.nbe-faq-title:after {
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  z-index: 1;
+  transform: rotate(0deg);
+  transition: 0.5s all;
+}
+
+
+
+.nbe-faq-text {
+	transition: 0.8s max-height;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    background-color: white;
+    z-index: 0;
+    width: 97%;
+    border-bottom: 2px solid #eee;
+    margin: 0 auto;
+ 
+}
+.nbe-faq-text p {
+  padding: 43px 21px 35px 27px;
+}
+
+.expand-answer {
+  max-height: 202px;
+}
+
+.expanded {
+ 
+}
+.expanded:after {
+  transform: rotate(90deg) !important;
+}
+.expanded {
+
+}
+
+</style>
+			
+			
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+		
+                <div class="nbe-faq-title expanded" data-expand-triger="one">
+                    <p>What can you expect before the training?</p>
+					<svg class="fq-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+						<g class="plus_4_" data-name="plus(4)" transform="translate(-7.167 -7.167)">
+							<path class="Path_89960" data-name="Path 89960" d="M150.5,241.917h-21c-.828,0-1.5-.429-1.5-.958s.672-.958,1.5-.958h21c.828,0,1.5.429,1.5.958S151.328,241.917,150.5,241.917Zm0,0" transform="translate(-120.333 -221.292)" fill="#0a0909" stroke="#0a0909" stroke-width="1"/>
+							<path class="Path_89961" data-name="Path 89961" d="M240.958,152c-.529,0-.958-.672-.958-1.5v-21c0-.828.429-1.5.958-1.5s.958.672.958,1.5v21C241.917,151.328,241.487,152,240.958,152Zm0,0" transform="translate(-221.292 -120.333)" fill="#0a0909" stroke="#0a0909" stroke-width="1"/>
+						</g>
+					</svg>
+
+                </div>
+                <div class="nbe-faq-text expand-answer" data-expand="one">
+                    <p class="nbe-regular-text">
+                        You get a free chapter, you should expect to understand how the training is built, what type of
+                        different training methods we use and how to prepare yourself. You should also expect our
+                        training methods to contain a lot of variation so that it's easy and keeps the learning
+                        interesting.
+                    </p>
+                </div>
+                <div class="nbe-faq-title" data-expand-triger="two">
+                    <p>What can you expect before the training?</p>
+					<svg class="fq-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+						<g class="plus_4_" data-name="plus(4)" transform="translate(-7.167 -7.167)">
+							<path class="Path_89960" data-name="Path 89960" d="M150.5,241.917h-21c-.828,0-1.5-.429-1.5-.958s.672-.958,1.5-.958h21c.828,0,1.5.429,1.5.958S151.328,241.917,150.5,241.917Zm0,0" transform="translate(-120.333 -221.292)" fill="#0a0909" stroke="#0a0909" stroke-width="1"/>
+							<path class="Path_89961" data-name="Path 89961" d="M240.958,152c-.529,0-.958-.672-.958-1.5v-21c0-.828.429-1.5.958-1.5s.958.672.958,1.5v21C241.917,151.328,241.487,152,240.958,152Zm0,0" transform="translate(-221.292 -120.333)" fill="#0a0909" stroke="#0a0909" stroke-width="1"/>
+						</g>
+					</svg>
+                </div>
+                <div class="nbe-faq-text" data-expand="two">
+                    <p class="nbe-regular-text">
+                        You get a free chapter, you should expect to understand how the training is built, what type of
+                        different training methods we use and how to prepare yourself. You should also expect our
+                        training methods to contain a lot of variation so that it's easy and keeps the learning
+                        interesting.
+                    </p>
+                </div>
+                <div class="nbe-faq-title" data-expand-triger="three">
+                    <p>What can you expect before the training?</p>
+					<svg class="fq-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+						<g class="plus_4_" data-name="plus(4)" transform="translate(-7.167 -7.167)">
+							<path class="Path_89960" data-name="Path 89960" d="M150.5,241.917h-21c-.828,0-1.5-.429-1.5-.958s.672-.958,1.5-.958h21c.828,0,1.5.429,1.5.958S151.328,241.917,150.5,241.917Zm0,0" transform="translate(-120.333 -221.292)" fill="#0a0909" stroke="#0a0909" stroke-width="1"/>
+							<path class="Path_89961" data-name="Path 89961" d="M240.958,152c-.529,0-.958-.672-.958-1.5v-21c0-.828.429-1.5.958-1.5s.958.672.958,1.5v21C241.917,151.328,241.487,152,240.958,152Zm0,0" transform="translate(-221.292 -120.333)" fill="#0a0909" stroke="#0a0909" stroke-width="1"/>
+						</g>
+					</svg>
+                </div>
+                <div class="nbe-faq-text" data-expand="three">
+                    <p class="nbe-regular-text">
+                        You get a free chapter, you should expect to understand how the training is built, what type of
+                        different training methods we use and how to prepare yourself. You should also expect our
+                        training methods to contain a lot of variation so that it's easy and keeps the learning
+                        interesting.
+                    </p>
+                </div>
+         
+
+<script>
+
+class NbeCollapse{
+   constructor(elem,opt) {
+		console.log(opt.hello)
+		this.element = elem;
+		this.closeOther =opt.closeOther?opt.closeOther:false;
+		this.faqExpand();
+    }
+    faqExpand() {
+		var self=this;
+        $(this.element).on('click', function () {
+			let check = $(this).hasClass('expanded');
+			if(self.closeOther){
+				$(".nbe-faq-title").removeClass("expanded");
+				$(".nbe-faq-text").removeClass("expand-answer");
+			}
+			let expandThis = $(this).data('expand-triger');
+            if (check === false) {
+                $(this).addClass('expanded');
+                $('[data-expand=' + expandThis + ']').addClass('expand-answer')
+            } else {
+                $(this).removeClass('expanded');
+                $('[data-expand=' + expandThis + ']').removeClass('expand-answer')
+            }
+        })
+    };
+}
+
+$(document).ready(function(){
+	new NbeCollapse('.nbe-faq-title',{
+			closeOther:true
+	});
+})
+</script>
+</body>
+
+
+
+</html>
